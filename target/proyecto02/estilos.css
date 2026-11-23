@@ -1,0 +1,294 @@
+/* Estilos para el menú-pie*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  background-color: #dec8ab; /* Color de fondo del menú */
+}
+.navbar-nav .nav-link {
+  color: white; /* Color del texto del menú */
+}
+.navbar-nav .nav-link:hover {
+  color: #8B4513; /* Color del texto del menú al pasar el mouse por encima */
+}
+mi-menu {
+  display: block;
+  margin-bottom: 120px;
+}
+mi-pie {
+  display: block;
+  margin-top: 200px;
+}
+
+/* Estilo slider automático */
+.slider-container {
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 50vh; /* Altura del contenedor, ajusta según sea necesario */
+  margin-top: 270px;
+  margin-bottom: 170px;
+}
+
+.slider-box {
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img {
+    width: 100%; 
+    height: auto;
+    border-radius: 25px;
+}
+
+@keyframes slide {
+    0%, 20% {
+        margin-left: 0;
+    }
+
+    25%, 45% {
+        margin-left: -100%;
+    }
+
+    50%, 70% {
+        margin-left: -200%;
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        padding: 30px;
+    }
+
+    .slider-box {
+        width: 100%;
+    }
+}
+
+.parrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  text-align: justify; /* Texto justificado */
+  margin-top: 30px; /* Espacio superior */
+  border-radius: 35px; /* Borde ovalado */
+  padding: 20px; /* Espaciado interno */
+  border: 4px solid #8B4513; /* Borde del óvalo */
+
+}
+
+#parrafo_index {
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 2;
+    color: black;
+}
+
+#explora {
+    font-size: 30px;
+    color: #8B4513;
+}
+
+/* Estilo empresa */
+
+#historia,
+#actividad,
+#controles,
+#organizacion {
+  padding: 20px 20px;
+  margin-bottom: 2px;
+  margin-top: 6px;
+  border-radius: 35px; /* Borde ovalado */
+  border: 4px solid #8B4513; /* Borde del óvalo */
+}
+#historia h2,
+#actividad h2,
+#controles h2,
+#organizacion h2 {
+  font-size: 30px;
+  color: #8B4513;
+}
+
+#historia p,
+#actividad p,
+#controles p,
+#organizacion p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 2;
+  color: black;
+}
+
+/* Estilos para el formulario */
+.formulario {
+  margin: auto; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto */
+  border-collapse: collapse; /* Fusiona los bordes de las celdas de la tabla */
+  border-radius: 26px; /* Borde ovalado */
+  width: 100%;
+}
+
+.formulario td {
+  color:#8B4513;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario input[type="password"],
+.formulario textarea {
+  border: 2px solid #8B4513; /* Bordes de los campos de entrada */
+  border-radius: 20px; /* Borde ovalado */
+  padding: 8px; /* Espaciado interno */
+  text-align: left; /* Centra el texto */
+  margin: 2% 0; /* Margen superior e inferior */
+  width: 100%; /* Ancho completo */
+  box-sizing: border-box; /* Incluye el borde y el padding en el ancho total */
+}
+
+.formulario input[type="reset"],
+.formulario input[type="submit"],
+.formulario input[type="button"] {
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: 20px; /* Borde ovalado */
+  padding: 10px 20px; /* Espaciado interno */
+  margin: 10px; /* Margen */
+  cursor: pointer;
+  color: white;
+  background-color: #8B4513;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #8B4513;
+  border-radius: 15px;
+}
+
+.styled-button {
+  background-color: #8B4513;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+/* Estilos para las columnas */
+.col-lg-3,
+.col-md-4,
+.col-sm-6,
+.col-xs-12 {
+  border: 1px solid #ccc; /* Borde de 1px sólido y color gris claro */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 25px;
+}
+
+/* Estilos para el pie de página */
+.mi-pie {
+  background-color: #8B4513; /* Color de fondo */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para los enlaces útiles */
+.enlaces_utiles {
+  display: flex; /* Mostrar en línea horizontal */
+  list-style: none; /* Eliminar viñetas */
+  padding: 0; /* Eliminar relleno */
+  margin: 0; /* Eliminar margen */
+}
+
+.enlaces_utiles li {
+  margin-right: 10px; /* Espacio entre elementos */
+}
+
+.enlaces_utiles a {
+  color: #ffffff; /* Color de los enlaces */
+  text-decoration: none; /* Eliminar subrayado */
+  transition: color 0.3s; /* Transición de color suave */
+}
+
+.enlaces_utiles a:hover {
+  color: #8B4513; /* Color al pasar el ratón */
+}
+
+/* Estilos para los enlaces de redes sociales */
+.redes-sociales {
+  display: flex; /* Mostrar en línea horizontal */
+  list-style: none; /* Eliminar viñetas */
+  padding: 0; /* Eliminar relleno */
+  margin: 0; /* Eliminar margen */
+  justify-content: right; /* Alinear elementos a la derecha */
+}
+
+.redes-sociales li {
+  margin-left: 10px; /* Espacio entre elementos */
+}
+
+.redes-sociales img {
+  border-radius: 50%; /* Borde ovalado */
+  border: 2px solid #000000; /* Borde blanco */
+}
+
+/* Estilos para los derechos de autor */
+.derechos_de_autor {
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alinear texto al centro */
+  list-style: none; /* Eliminar viñetas */
+}
+
+.navbar-nav.dropdown {
+  margin-right: 70px; /* Espacio entre los dos elementos div */
+}
+
+/* estilos Carrito*/
+
+.navbar-nav .dropdown img {
+  margin-right: 5px; /* Ajusta el margen derecho según tu preferencia */
+}
+
+#carrito-container {
+  border-radius: 20px; /* Borde ovalado */
+  padding: 20px; /* Espacio interno para separar los productos del borde */
+}
+
+#carrito-container > div {
+  margin-bottom: 20px; /* Espacio entre cada producto */
+  padding: 10px; /* Espacio interno para separar los elementos dentro del producto */
+  border: 1px solid #8B4513; /* Borde alrededor de cada producto */
+  border-radius: 10px; /* Borde ovalado para cada producto */
+}
+
+/* Estilos para los enlaces dentro de las opciones */
+.opciones a {
+  color: black; /* Color del texto por defecto */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+/* Estilos para cambiar el color de fondo cuando se pasa el cursor */
+.opciones:hover a {
+  color: #8B4513;/* Cambia el color de fondo cuando se pasa el cursor */
+}
+

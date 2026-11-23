@@ -1,0 +1,13 @@
+tienda\DetallesBD.class
+tienda\Modificar.class
+tienda\ProductoBD.class
+tienda\CancelarPedido.class
+tienda\PedidoBD.class
+tienda\Tramitacion.class
+tienda\Registro.class
+tienda\UsuarioBD.class
+tienda\AccesoBD.class
+tienda\CerrarSesion.class
+tienda\Producto.class
+prueba\Hola.class
+tienda\Login.class
